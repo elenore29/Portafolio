@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portafolio</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
-    <h1>Elenore Elisa Espinosa Nava</h1>
+   
+    <section id="about-me-box">
+        <img id="elenore-pic" src="./images/elenore.png" alt="">   
+        <article id="about-me">Elenore Nava<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</article> 
+    </section>
+    <section>
+        <p class="title">Herramientas de desarrollo</p>
+        <div id="tools">
+            <img class="pro-icon" src="./images/html_logo.png" alt="HTML">
+            <img class="pro-icon" src="./images/js_logo.png" alt="JavaScript">
+            <img class="pro-icon" src="./images/css_logo.png" alt="CSS">
+            <img class="pro-icon" src="./images/node_logo.png" alt="Node">
+            <img class="pro-icon" src="./images/react_logo.png" alt="React">
+            <img class="pro-icon" src="./images/bt_logo.png" alt="Bootstrap">
+            <img class="pro-icon" src="./images/gh_logo.png" alt="Git Hub">
+        </div>
+    </section>
+
+    <section>
+        <p class="title">Portafolio</p>
+        <div id="portfolio">
+                <iframe class="frame-box" src="https://elenore29.github.io/League-of-Legends-Walkthrough/src/index.html"></iframe>
+                <iframe class="frame-box" src="https://analhi7.github.io/CDMX007-social-network/src/index.html"></iframe>
+        </div>
+        <iframe class="big-box" src="https://burger-queen-1480c.firebaseapp.com/especificaciones/"></iframe>
+    </section>
+    <section>
+        <p class="title">Fotografía</p>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="./images/guacamayas.jpg"> <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Guacamayas</h3>
+                        <h5 class="light grey-text text-lighten-3">Foto de animales</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/flor.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Flor</h3>
+                        <h5 class="light grey-text text-lighten-3">Foto naturaleza.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/soumaya.jpg"> <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>Soumaya</h3>
+                        <h5 class="light grey-text text-lighten-3">Foto de arquitectura.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/perfume.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Perfume</h3>
+                        <h5 class="light grey-text text-lighten-3">Foto de producto.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/coca.jpg"> <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>Coca-cola</h3>
+                        <h5 class="light grey-text text-lighten-3">Foto de producto.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/angel.jpg"> <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Angel de la Independencia</h3>
+                        <h5 class="light grey-text text-lighten-3">Foto nocturna.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/roy.jpg"> <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Arquero</h3>
+                        <h5 class="light grey-text text-lighten-3">Foto retrato</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/bellas_artes.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Bellas Artes</h3>
+                        <h5 class="light grey-text text-lighten-3">Foto de arquetectura</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    
+    </section>
+    
+
+
+    <!--Import jQuery Library-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slider();
+        });
+    </script>
 </body>
+
 </html>
