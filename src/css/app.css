@@ -1,40 +1,30 @@
-*{
-    margin: 0 auto; 
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
 .title{
     width: 100%;
     text-align: center; 
-    background-color: white;
     margin: 0; 
     color: black; 
     font-size: 2em; 
     padding: 10px; 
 }
 
-#elenore-pic {
-    width: 10%; 
-    display: flex;
-    
-}
-
-#about-me {
-    width: 50%; 
-    display: inline-block;
-    padding: 0px;
+.name{
+    width: 100%;
+    text-align: center; 
+    margin: 0; 
     color: black; 
-    text-align: justify; 
-    display: flex;
-    font-size: 1em;
+    font-size: 2em; 
+    padding: 10px; 
 }
 
-#about-me-box {
-        
-    width: 100%; 
-    padding: 5%; 
-}
-
-.elenore-logo {
-    width: 8%; 
+.nav-first {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .header {
@@ -46,15 +36,15 @@
 }
 
 .pro-icon {
-    width: 10%; 
-    margin: 1.9%; 
+    width: 6%; 
+    margin: 3.8%; 
 }
 
 #tools {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
     width: 100%; 
-    padding-left: 5%;
-    padding-right: 5%; 
-   
 }
 
 .frame-box {
@@ -73,4 +63,302 @@
 #portfolio {
     display: flex;
     justify-content: space-around;  
+}
+
+/* about me */
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center; 
+    font-size: 24px;
+}
+
+.about-me {
+    width: 100%; 
+    height: 70vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.my-tools {
+    width: 70%; 
+    height: 30vh;
+    margin: 0 auto;
+}
+
+.projects {
+    width: 80%; 
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.container {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 100px;
+    margin-left: 100px; 
+    background-color: black;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 50px;
+}
+
+.rombo {
+    background-image: url("https://i.ibb.co/W6jmKCs/eli4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 250px; 
+    height: 250px; 
+    border: 3px solid #555; 
+    border-color: black; 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@keyframes app-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div.girar {
+  width:250px;
+  height:250px;
+  background-color: black; 
+  animation: app-spin infinite 20s linear;
+}
+
+.draw {
+  position: relative;
+  width: 50%;
+  text-align: justify;
+  padding: 30px 50px 50px 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.draw::before, .draw::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.draw::before {
+  top: 0;
+  left: 0;
+  border-top-color: black;
+  border-right-color: black;
+  animation: border 8s infinite;
+}
+
+.draw::after {
+  bottom: 0;
+  right: 0;
+  animation: border 8s 4s infinite, borderColor 8s 4s     infinite;
+}
+
+@keyframes border {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  25% {
+    width: 100%;
+    height: 0;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes borderColor {
+  0% {
+    border-bottom-color: black;
+    border-left-color: black;
+  }
+  50% {
+    border-bottom-color: black;
+    border-left-color: black;
+  }
+  51% {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+/* nav */
+
+.nav-wrapper{
+    background-color: black;
+    position: fixed;
+}
+
+.card {
+    margin: 2%;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+ }
+
+
+ #contact {
+     background-color: black;
+     color: white; 
+     text-align: center; 
+     margin: 0px; 
+     padding-bottom: 100px;
+     font-size: 25px;
+ }
+
+ a {
+     color: black;
+ }
+
+ .links {
+    color: white;
+}
+ 
+@media screen and (max-width:950px) {
+.container {
+    margin-top: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+.rombo {
+    width: 150px;
+    height: 150px;
+}
+
+div.girar {
+    width: 150px;
+    height: 150px;
+}
+
+.draw {
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    margin-top: 50px;
+    padding: 30px 50px 50px 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .rombo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    div.girar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .draw {
+        position: relative;
+        width: 100%;
+        text-align: justify;
+        margin-top: 50px;
+        padding: 15px 25px 25px 25px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .about-me {
+        height: 100vh;
+    }
+    .container {
+        margin-top: 100px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .rombo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    div.girar {
+        width: 100px;
+        height: 10px;
+    }
+
+    .draw {
+        position: relative;
+        width: 100%;
+        text-align: justify;
+        margin-top: 50px;
+        padding: 15px 25px 25px 25px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .title{
+        font-size: 1em; 
+    }
+
+    .name{
+        width: 100%;
+        text-align: center; 
+        margin: 0; 
+        color: black; 
+        font-size: 1em; 
+        padding: 10px; 
+    }
+
+    .my-tools {
+        margin-top: 30%; 
+        width: 100%;
+    }
 }

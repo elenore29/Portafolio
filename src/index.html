@@ -11,12 +11,45 @@
 </head>
 
 <body>
-   
-    <section id="about-me-box">
-        <img id="elenore-pic" src="./images/elenore.png" alt="">   
-        <article id="about-me">Elenore Nava<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</article> 
+    <nav class="nav-first">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">
+                <img src="images/elenor_logo.svg" width="80px"></img>
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img
+                        src="images/burger2.png" width="80px"></img></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about-me">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#photography">Fotografía</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#about-me">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#photography">Fotografía</a></li>
+        <li><a href="#contact">Contacto</a></li>
+    </ul>
+
+    <section id="about-me" class="about-me">
+        <div class="contenedor">
+            <div class="container">
+                <div class="girar"></div>
+                <div class="rombo"></div>
+            </div>
+            <div class="draw">
+                <p class="name">Elenore Nava</p>
+                ¡Hola! soy Elenore y tengo la firme creencia de ser cada día la mejor versión de mi misma.
+                Creo en el desarrollo de la felicidad. Soy Diseñadora Gráfica de profesión y desarrolladora
+                Front-End Developer de corazón. Apasionada por la tecnología, el arte y las vanguardias
+                que surgen día a día.
+            </div>
+        </div>
     </section>
-    <section>
+
+    <section class="my-tools">
         <p class="title">Herramientas de desarrollo</p>
         <div id="tools">
             <img class="pro-icon" src="./images/html_logo.png" alt="HTML">
@@ -29,90 +62,158 @@
         </div>
     </section>
 
-    <section>
-        <p class="title">Portafolio</p>
-        <div id="portfolio">
-                <iframe class="frame-box" src="https://elenore29.github.io/League-of-Legends-Walkthrough/src/index.html"></iframe>
-                <iframe class="frame-box" src="https://analhi7.github.io/CDMX007-social-network/src/index.html"></iframe>
-        </div>
-        <iframe class="big-box" src="https://burger-queen-1480c.firebaseapp.com/especificaciones/"></iframe>
-    </section>
-    <section>
-        <p class="title">Fotografía</p>
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <img src="./images/guacamayas.jpg"> <!-- random image -->
-                    <div class="caption left-align">
-                        <h3>Guacamayas</h3>
-                        <h5 class="light grey-text text-lighten-3">Foto de animales</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/flor.jpg"> <!-- random image -->
-                    <div class="caption right-align">
-                        <h3>Flor</h3>
-                        <h5 class="light grey-text text-lighten-3">Foto naturaleza.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/soumaya.jpg"> <!-- random image -->
-                    <div class="caption center-align">
-                        <h3>Soumaya</h3>
-                        <h5 class="light grey-text text-lighten-3">Foto de arquitectura.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/perfume.jpg"> <!-- random image -->
-                    <div class="caption right-align">
-                        <h3>Perfume</h3>
-                        <h5 class="light grey-text text-lighten-3">Foto de producto.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/coca.jpg"> <!-- random image -->
-                    <div class="caption center-align">
-                        <h3>Coca-cola</h3>
-                        <h5 class="light grey-text text-lighten-3">Foto de producto.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/angel.jpg"> <!-- random image -->
-                    <div class="caption left-align">
-                        <h3>Angel de la Independencia</h3>
-                        <h5 class="light grey-text text-lighten-3">Foto nocturna.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/roy.jpg"> <!-- random image -->
-                    <div class="caption left-align">
-                        <h3>Arquero</h3>
-                        <h5 class="light grey-text text-lighten-3">Foto retrato</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/bellas_artes.jpg"> <!-- random image -->
-                    <div class="caption right-align">
-                        <h3>Bellas Artes</h3>
-                        <h5 class="light grey-text text-lighten-3">Foto de arquetectura</h5>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    
-    </section>
-    
+    <section id="projects" class="projects">
+        <p class="title">Proyectos</p>
 
+        <div class="cards">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/burger_queen.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Burger Queen<i
+                            class="material-icons right">+</i></span>
+                    <p><a href="https://burger-queen-1480c.firebaseapp.com/" target="_blank">Demo</a></p>
+                    <p><a href="https://github.com/elenore29/CDMX007-fe-burger-queen.git" target="_blank">Código</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Burger Queen<i
+                            class="material-icons right">-</i></span>
+                    <p>Burger Queen es una aplicación para tablet desarrollada para un restaurante de comida rápida, que
+                        facilita la toma de pedidos. Es una Single Page Application construida con React.js, Context
+                        API, y CSS3.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/cuisine_divine.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Cuisine Divine<i
+                            class="material-icons right">+</i></span>
+                    <p><a href="https://elenore29.github.io/CDMX007-social-network/src/index.html#/"
+                            target="_blank">Demo</a></p>
+                    <p><a href="https://github.com/elenore29/CDMX007-social-network.git" target="_blank">Código</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Cuisine Divine<i
+                            class="material-icons right">-</i></span>
+                    <p>Es una red social para estudiantes de gastronomía. Es una Single Page Application construida con
+                        JavaScript Vanilla, Firebase como base de datos, HTML5, CSS3 y Bootstrap. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/md_links.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Markdown Links<i
+                            class="material-icons right">+</i></span>
+                    <p><a href="https://github.com/elenore29/CDMX007-fe-md-links.git" target="_blank">Código</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Markdown Links<i
+                            class="material-icons right">-</i></span>
+                    <p>Es una librería ejecutable mediante comandos en la consola de git que lee el contenido de
+                        archivos Markdown y detecta links rotos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/lol2.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">LoL Walkthrough<i
+                            class="material-icons right">+</i></span>
+                    <p><a href="https://elenore29.github.io/League-of-Legends-Walkthrough/src/index.html"
+                            target="_blank">Demo</a></p>
+                    <p><a href="https://github.com/elenore29/League-of-Legends-Walkthrough.git"
+                            target="_blank">Código</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">LoL Walkthrough<i
+                            class="material-icons right">-</i></span>
+                    <p>Aplicación videojuego online League of legends que consume la data del videojuego para desplegar
+                        información de los campeones. Este proyecto se construyó con HTML5, CSS3 y JavaScript Vanilla.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="photography">
+        <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center">
+
+            </div>
+            <div class="carousel-item black white-text">
+                <h2>Fotografía</h2>
+                <p class="white-text">Guacamayas</p>
+                <img src="./images/guacamayas.jpg"></img>
+            </div>
+            <div class="carousel-item black white-text">
+                <h2>Fotografía</h2>
+                <p class="white-text">Coca-cola</p>
+                <img src="./images/coca.jpg"></img>
+            </div>
+            <div class="carousel-item black white-text">
+                <h2>Fotografía</h2>
+                <p class="white-text">Flor</p>
+                <img src="./images/flor.jpg"></img>
+            </div>
+            <div class="carousel-item black white-text">
+                <h2>Fotografía</h2>
+                <p class="white-text">Soumaya</p>
+                <img src="./images/soumaya.jpg"></img>
+            </div>
+            <div class="carousel-item black white-text">
+                <h2>Fotografía</h2>
+                <p class="white-text">Arquero</p>
+                <img src="./images/roy.jpg"></img>
+            </div>
+            <div class="carousel-item black white-text">
+                <h2>Fotografía</h2>
+                <p class="white-text">Bellas Artes</p>
+                <img src="./images/bellas_artes.jpg"></img>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="title">Contacto</p>
+        <p>Celular: 5548712727</p>
+        <p>Email: elenore.nava@gmail.com</p>
+        <p><a class="links" href="https://www.linkedin.com/in/elenore-nava/" target="_blank">Linkedin</a></p>
+        <p><a class="links" href="./elenore_cv.pdf" target="_blank">CV</a></p>
+        <p><a class="links" href="https://github.com/elenore29/" target="_blank">GitHub</a></p>
+        
+
+    </section>
 
     <!--Import jQuery Library-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.slider').slider();
         });
+
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
     </script>
 </body>
 
